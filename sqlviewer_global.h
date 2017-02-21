@@ -1,0 +1,13 @@
+#ifndef SQLVIEWER_GLOBAL_H
+#define SQLVIEWER_GLOBAL_H
+
+#include <QtGlobal>
+
+#if defined(SQLVIEWER_LIBRARY)
+#  define SQLVIEWERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SQLVIEWERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SQLVIEWER_GLOBAL_H
+
